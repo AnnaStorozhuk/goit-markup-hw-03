@@ -22,15 +22,6 @@ hover,focus: #2196F3
   --team-bcg: #F5F4FA;
 }
 
-
-/* body */
-.body {
-  background-color: var(--main-color-body);
-  color: var(--main-color-title);
-  font-family: Roboto, sans-serif;
-
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -49,6 +40,17 @@ ul {
   list-style: none;
 }
 
+/* body */
+.body {
+  background-color: var(--main-color-header);
+  color: var(--main-color-title);
+  font-family: Roboto, sans-serif;
+
+  width: 1200px;
+}
+
+
+
 /* header */
 .page-header {
   background-color: var(--main-color-header);
@@ -56,16 +58,36 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.3;
+  display: flex;
+  align-items:  center;
+}
+.main-nav {
+  display: flex;
+  margin-right: 93px;
 }
 
 .link {
+ 
   color: var(--main-color-title);
   text-decoration: none;
   font-family: Roboto, sans-serif;
+  margin-left: 50px;
+  
 }
 
-.nav {
+.site-nav{
+  display: flex;
+  margin-right: auto;
+}
+
+.nav-auth{
+  justify-content: flex-end;
+}
+.auth {
   color: var(--main-color-text);
+ 
+  
+ 
 }
 
 .link:hover, .link:focus {
@@ -85,6 +107,8 @@ ul {
   color: var(--hover-focus);
 }
 
+
+
 /* footer */
 .basement {
   background-color: var(--main-color-footer);
@@ -92,6 +116,7 @@ ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+ 
  
 }
 
@@ -111,6 +136,7 @@ ul {
   line-height: 1.71;
   text-decoration: none;
 }
+
 .logo-basement {
   color: #FFFFFF;
   font-family: Raleway, sans-serif;
@@ -119,6 +145,8 @@ ul {
   line-height: 1.92;
   text-decoration: none;
 }
+
+
 
 /* main */
 .hero,
@@ -131,7 +159,9 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center
+  text-align: center;
+  /* width: 1600px;  */
+  text-transform: uppercase;
 }
 .team {
   background-color: var(--team-bcg);
@@ -155,6 +185,15 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   text-decoration: none;
+
+  border-radius: 4px;
+ padding: 10px 32px;
+}
+
+.display-tasks,
+.display-works {
+  display: flex;
+
 }
 
 .title {
@@ -164,14 +203,32 @@ ul {
   text-align: center;
 
   text-transform: uppercase;
+
+  margin: 0;
+  padding-top: 94px;
 }
+
+.display-tasks {
+  padding-top: 94px;
+  margin: 0;
+
+}
+
+.priority-tasks {
+ 
+  margin-left: 30px;
+  width: 270px;
+  flex-direction: row; 
+}
+
 
 .title-tasks {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-
+  margin-bottom: 10px;
   text-transform: uppercase;
+  
 }
 
 .main-task {
@@ -182,8 +239,50 @@ ul {
   line-height: 1.71;
 }
 
+.display-works {
+  padding: 0;
+  margin-top: 50px;
+  padding-bottom: 94px;
+}
+
+.work{
+  margin-left: 30px;
+  display: flex; 
+}
+
+
+.container-team {
+  background-color: var(--team-bcg);
+}
+
+.team {
+ 
+ margin: 0;
+
+ font-weight: 700;
+ font-size: 36px;
+ line-height: 1.2;
+ text-align: center;
+
+ text-transform: uppercase;
+ padding-top: 94px;
+
+ 
+}
+
 .title-team {
   background-color: var(--team-bcg);
+ display: flex;
+  padding: 0;
+  margin: 0;
+  padding-top: 50px ; 
+  padding-bottom: 94px;
+}
+
+.teamates {
+  display: block;
+  margin-left: 30px;
+ 
 }
 
 .team-name {
