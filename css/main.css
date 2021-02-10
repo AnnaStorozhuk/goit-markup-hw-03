@@ -46,7 +46,10 @@ ul {
   color: var(--main-color-title);
   font-family: Roboto, sans-serif;
 
-  width: 1200px;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+
 }
 
 
@@ -60,10 +63,15 @@ ul {
   line-height: 1.3;
   display: flex;
   align-items:  center;
+border-bottom: 1px solid #ECECEC;
 }
+
 .main-nav {
   display: flex;
   margin-right: 93px;
+}
+.site-nav .link.current {
+  color: var(--hover-focus);
 }
 
 .link {
@@ -122,8 +130,8 @@ ul {
   font-size: 14px;
   line-height: 1.71;
  
-  padding: 15px; 
   padding-top: 60px;
+
 
 }
 
@@ -173,8 +181,21 @@ ul {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  /* width: 1600px;  */
+  justify-content: center;
+  margin: 0;
+
+ 
   text-transform: uppercase;
+}
+
+.title-hero {
+  padding-top: 200px;
+  
+}
+.hero{
+  width: 1600px; 
+  min-height: 600px;
+  align-items: center;
 }
 .team {
   background-color: var(--team-bcg);
@@ -199,6 +220,7 @@ ul {
   line-height: 1.87;
   text-decoration: none;
 
+  margin-top: 30px;  
   border-radius: 4px;
  padding: 10px 32px;
 }
@@ -206,6 +228,7 @@ ul {
 .display-tasks,
 .display-works {
   display: flex;
+  margin: 0;
 
 }
 
@@ -235,6 +258,10 @@ ul {
   width: 270px;
   flex-direction: row; 
 }
+.priority-tasks:nth-child(1) {
+  margin: 0;
+
+}
 
 
 .title-tasks {
@@ -261,10 +288,13 @@ ul {
 }
 
 .work{
-  padding-left: 30px;
+  margin-left: 30px;
   display: flex; 
 }
 
+.work:nth-child(1) {
+  margin: 0;
+}
 
 .container-team {
   background-color: var(--team-bcg);
@@ -297,7 +327,12 @@ ul {
 .teamates {
   display: block;
   margin-left: 30px;
+  background-color: var(--main-color-header);
  
+}
+
+.teamates:nth-child(1) {
+  margin: 0;
 }
 
 .team-name {
@@ -375,7 +410,3 @@ background-color: var(--hover-focus);
   margin-right: 0;
 }
 
-.title-works,
-.main-task {
-  padding-left: 24px  ;
-}
