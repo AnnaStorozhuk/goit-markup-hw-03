@@ -77,12 +77,15 @@ ul {
 
 .site-nav{
   display: flex;
-  margin-right: auto;
+  
 }
 
 .nav-auth{
   justify-content: flex-end;
+  margin: 0;
+  margin-left: auto;
 }
+
 .auth {
   color: var(--main-color-text);
  
@@ -101,6 +104,8 @@ ul {
   font-size: 26px;
   line-height: 1.92;
   text-decoration: none;
+  
+  padding-left: 15px;
 }
 
 .logo-word {
@@ -117,7 +122,9 @@ ul {
   font-size: 14px;
   line-height: 1.71;
  
- 
+  padding: 15px; 
+  padding-top: 60px;
+
 }
 
 .address {
@@ -128,13 +135,18 @@ ul {
   font-style: normal;
   text-decoration: none;
 }
-  
+
+.info-nav {
+  padding: 0;  
+}
+
 .info {
   color: rgba(255, 255, 255, 0.6);
 
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+ 
 }
 
 .logo-basement {
@@ -144,6 +156,7 @@ ul {
   font-size: 26px;
   line-height: 1.92;
   text-decoration: none;
+  
 }
 
 
@@ -209,8 +222,10 @@ ul {
 }
 
 .display-tasks {
+  padding: 0;
   padding-top: 94px;
   margin: 0;
+
 
 }
 
@@ -246,7 +261,7 @@ ul {
 }
 
 .work{
-  margin-left: 30px;
+  padding-left: 30px;
   display: flex; 
 }
 
@@ -298,6 +313,18 @@ ul {
   line-height: 1.2;
 }
 
+/* portfolio */
+
+
+
+.btn-nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+
+}
+
+
 .btn:hover, .btn:focus {
 color: var(--main-color-header) ;
 background-color: var(--hover-focus);
@@ -311,6 +338,14 @@ background-color: var(--hover-focus);
   font-size: 16px;
   line-height: 1.62;
   font-family: Roboto, sans-serif;
+
+  margin-left: 8px;
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  display: flex;
+  align-items:  center;
+
 }
 
 .title-works {
@@ -318,4 +353,29 @@ background-color: var(--hover-focus);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+}
+
+.flex-contaner {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin-bottom: 94px;
+}
+
+.flex-element {
+  width: 370px;
+  margin-right: 30px;
+  margin-top: 34px;
+ 
+/* 
+  border: 1px solid #EEEEEE; */
+}
+
+.flex-element:nth-child(3n) {
+  margin-right: 0;
+}
+
+.title-works,
+.main-task {
+  padding-left: 24px  ;
 }
