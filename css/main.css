@@ -46,13 +46,20 @@ ul {
   color: var(--main-color-title);
   font-family: Roboto, sans-serif;
 
-  width: 1170px;
+  max-width: 1600px;
+  /* width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px; */
 
 }
 
-
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 /* header */
 .page-header {
@@ -131,7 +138,7 @@ border-bottom: 1px solid #ECECEC;
   line-height: 1.71;
  
   padding-top: 60px;
-
+ 
 
 }
 
@@ -229,6 +236,7 @@ border-bottom: 1px solid #ECECEC;
 .display-works {
   display: flex;
   margin: 0;
+  justify-content: space-between;
 
 }
 
@@ -279,7 +287,10 @@ border-bottom: 1px solid #ECECEC;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  margin: 0;
+ 
 }
+
 
 .display-works {
   padding: 0;
@@ -296,8 +307,9 @@ border-bottom: 1px solid #ECECEC;
   margin: 0;
 }
 
-.container-team {
+.container-team.container {
   background-color: var(--team-bcg);
+  
 }
 
 .team {
@@ -322,6 +334,8 @@ border-bottom: 1px solid #ECECEC;
   margin: 0;
   padding-top: 50px ; 
   padding-bottom: 94px;
+  justify-content: space-between;
+  /* flex-basis: calc(100% / 3); */
 }
 
 .teamates {
@@ -388,6 +402,7 @@ background-color: var(--hover-focus);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  margin: 0;
 }
 
 .flex-contaner {
@@ -395,18 +410,28 @@ background-color: var(--hover-focus);
   flex-wrap: wrap;
   padding: 15px;
   margin-bottom: 94px;
+ 
 }
 
 .flex-element {
-  width: 370px;
-  margin-right: 30px;
-  margin-top: 34px;
+  flex-basis: calc(100% / 3);
  
-/* 
-  border: 1px solid #EEEEEE; */
+  display: block;
+  margin-top: 34px;
+  
+
 }
 
 .flex-element:nth-child(3n) {
   margin-right: 0;
 }
 
+
+.port-works {
+ max-width: 370px;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+
+  padding: 20px 24px;
+ margin: 0;
+}
