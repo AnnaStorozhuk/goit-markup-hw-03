@@ -434,6 +434,9 @@ border: transparent;
 
 }
 
+.btn:first-child {
+  margin: 0;
+}
 .title-works {
   color: var(--main-color-title);
   font-weight: 700;
